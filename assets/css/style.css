@@ -491,6 +491,21 @@ img {
   width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#languageSelect option {
+  padding: 0; /* Adjust padding for better vertical alignment */
+}
+
+#languageSelect {
+  max-height: auto;
+  max-width: 120px;
+  font-size: 10px;
+  padding: 0; /* Remove default padding */
+  line-height: 1.5; /* Adjust line height for vertical alignment */
+}
 
 
 .parallax-bg{
