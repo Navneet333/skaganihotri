@@ -2003,6 +2003,69 @@ button.ltr {
 .default-form .form-group:last-child{
   margin-bottom: 0px;
 }
+.inner-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.project-block-one video {
+  width: 100%; /* Ensure the video takes up the full width of its container */
+  height: 250px; /* Set a fixed height for all videos */
+  object-fit: cover; /* Ensures the video fills the container while maintaining aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners for videos */
+  display: block; /* Prevent inline spacing issues */
+}
+
+.three-item-carousel .owl-carousel .project-block-one {
+  margin: 0 10px; /* Adds some margin between the video blocks */
+}
+.logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.clients-logo {
+  margin: 10px;
+  width: calc(25% - 20px);
+}
+
+.clients-logo video {
+  width: 100%;
+  height: auto;
+}
+
+.clients-logo div {
+  text-align: center;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 990px) {
+  .inner-container {
+      overflow: hidden; /* Hide overflow for slider */
+      padding-right: 10px;
+  }
+  .logo-list {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+  }
+
+  .clients-logo {
+      width: 80%; /* Each video takes up 80% of the container width */
+      flex: 0 0 auto; /* Prevents flexbox from shrinking the items */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clients-logo {
+      width: 100%; /* Full width on smaller screens */
+  }
+}
 
 .default-form .form-group input[type='text'],
 .default-form .form-group input[type='email'],
