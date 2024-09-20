@@ -52,6 +52,7 @@
 
  ***/
 * {
+  /* overflow: ; */
   margin:0px;
   padding:0px;
   border:none;
@@ -95,6 +96,7 @@ body {
   background-repeat:no-repeat;
   background-position:center top;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
   @media (min-width:1200px) {
@@ -116,9 +118,10 @@ body {
 
 .auto-container{
   position:static;
-  max-width:1330px;
-  padding:0px 15px;
+  max-width: 100%;
+  padding:0px 0px;
   margin:0 auto;
+  /* overflow: hidden */
 }
 
 .small-container{
@@ -871,7 +874,7 @@ html {
   justify-content: space-between;
   background: var(--theme-color);
   padding: 12.5px 50px;
-  border-radius: 27.5px 27.5px 0px 0px;
+  /* border-radius: 27.5px 27.5px 0px 0px; */
 }
 
 .header-top .top-inner .info-list li{
@@ -1047,6 +1050,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 15px;
+    padding-right: 15px;
 }
 
 .main-header .search-box-outer{
@@ -2012,6 +2017,7 @@ button.ltr {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
 .project-block-one video {
   width: 100%; /* Ensure the video takes up the full width of its container */
   height: 250px; /* Set a fixed height for all videos */

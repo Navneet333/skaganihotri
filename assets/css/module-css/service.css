@@ -68,6 +68,7 @@
 
 .service-block-one .inner-box{
   position: relative;
+  max-height: 460px !important;
   display: block;
   background: #fff;
   border-radius: 10px;
